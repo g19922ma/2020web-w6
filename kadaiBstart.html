@@ -23,6 +23,12 @@
       border-radius: 50%;
       transform: rotate(360deg);
     }
+    .chukichi {
+      transform: scale(0.9);
+    }
+    .shokichi {
+      transform: scale(0.9);
+    }
     .kyo {
       transform: scale(0.9);
     }
@@ -54,13 +60,13 @@
           div.classList.add('daikichi');
         } else if(i===shokichi){
           div.textContent = '小吉';
-          div.classList.add('lose');
+          div.classList.add('shokichi');
         }else if(i===kyo){
           div.textContent = '凶';
-          div.classList.add('lose');
+          div.classList.add('kyo');
       }else{
          div.textContent = '中凶';
-          div.classList.add('lose');
+          div.classList.add('chukichi');
        );
 
       document.body.appendChild(div);
