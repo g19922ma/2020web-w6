@@ -3,7 +3,7 @@
      function setUserName() {
      let myName = prompt('占いたい人の名前を入力してください。');
      localStorage.setItem('name', myName);
-     myHeading.textContent = myName+'さんの運勢の運勢は・・・';
+     myHeading.textContent = ' '+myName;
      }
      myButton.onclick = function() {
      setUserName();
