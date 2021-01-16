@@ -5,8 +5,7 @@
      localStorage.setItem('name', myName);
      myHeading.textContent = myName+'さんの今年の運勢は・・・';
      }
-     myButton.style.border = "dashed 4px blue";
-     myButton.style.borderRadius = "0px";
+     myButton.style.border = "dashed 3px rgb(240,144,141)";
      myButton.style.backgroundColor = "lightblue";
      myButton.onclick = function() {
      setUserName();
