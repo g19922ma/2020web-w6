@@ -7,7 +7,6 @@
      }
      myButton.style.border = "dashed 3px rgb(240,144,141)";
      myButton.style.backgroundColor = "rgb(192,162,199)";
-     myButton.border-radius= 10px;
      myButton.onclick = function() {
      setUserName();
      }
