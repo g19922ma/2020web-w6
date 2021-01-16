@@ -6,7 +6,7 @@
      myHeading.textContent = myName+'さんの今年の運勢は・・・';
      }
      myButton.style.border = "dashed 3px rgb(240,144,141)";
-     myButton.style.backgroundColor = "lightblue";
+     myButton.style.backgroundColor = "rgb(192,162,199)";
      myButton.onclick = function() {
      setUserName();
      }
