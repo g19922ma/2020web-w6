@@ -72,8 +72,9 @@
         if (i === daikichi) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
+          const form = document.querySelector('form');
           form.onsubmit = function() {
-          alert(+myName.value'の今年の運勢は大吉です');
+          alert(+myName'の今年の運勢は大吉です');
         }
         } else if (i===chukichi||i===chukichi2||i===chukichi3){
           div.textContent = '中吉';
