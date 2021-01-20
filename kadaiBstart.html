@@ -23,7 +23,6 @@
       background: rgb(236,109,113);
       border-radius: 50%;
       transform: rotate(360deg);
-      <script src="kadaiB-2.js"></script>
     }
      .chukichi {
       background: rgb(247,185,119);
@@ -42,7 +41,20 @@
 <body>
     <h1>　　おみくじ2021年　　</h1>
     <h1><button>名前設定ボタン</button>
- 　　<script src="kadaiB-2.js"></script></h1>
+      <script>
+     let myButton = document.querySelector('button');
+     let myHeading = document.querySelector('h1');
+     function setUserName() {
+     let myName = prompt('占いたい人の名前を入力してください。');
+     localStorage.setItem('name', myName);
+     myHeading.textContent = myName+'さんの今年の運勢は・・・';
+     }
+     myButton.style.border = "dashed 2px white";
+     myButton.style.backgroundColor = "rgb(240,144,141)";
+     myButton.onclick = function() {
+     setUserName();
+     }
+     </script>
     <h3>名前を入力後、好きなおみくじを選んでください。</h3>
   <script>
     'use strict';
