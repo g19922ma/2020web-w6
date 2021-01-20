@@ -5,7 +5,6 @@
   <title>JavaScript Practice</title>
   <style>
     body {
-      background-color:rgb(253,239,242);
       display: flex;
       flex-wrap: wrap;
     }
@@ -23,6 +22,7 @@
       background: rgb(236,109,113);
       border-radius: 50%;
       transform: rotate(360deg);
+      <script src="kadaiB-2.js"></script>
     }
      .chukichi {
       background: rgb(247,185,119);
@@ -40,9 +40,8 @@
 </head>
 <body>
     <h1>　　おみくじ2021年　　</h1>
-    <h1><button>名前設定ボタン</button>
-     <script src="kadaiB-2.js"></script></h1>
-    <h3>名前を入力後、好きなおみくじを選んでください。</h3>
+    <button>名前設定ボタン</button>
+ 　　<script src="kadaiB-2.js"></script>
   <script>
     'use strict';
     const num = 10;
@@ -71,8 +70,6 @@
         if (i === daikichi) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
-          const form = document.querySelector('form');
-        }
         } else if (i===chukichi||i===chukichi2||i===chukichi3){
           div.textContent = '中吉';
           div.classList.add('chukichi');
@@ -88,5 +85,5 @@
       document.body.appendChild(div);
     }
   </script>
-  </body>
+</body>
 </html>
